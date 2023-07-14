@@ -2,7 +2,6 @@
 import React from 'react'
 import Icon from '../../assets/icons/gym.png'
 import { Stack, Typography } from '@mui/material'
-import { BorderTop } from '@mui/icons-material'
 
 export default function BodyPart({ item, bodyPart, setBodyPart }) {
 

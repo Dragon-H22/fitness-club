@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Box, Typography, Stack, Button } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 import HeroBannerImage from '../../assets/images/banner.png'
 
 export default function HeroBanner() {
