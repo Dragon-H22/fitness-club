@@ -13,7 +13,12 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
     useEffect(()=>{
         const fetchExercisesData = async ()=>{
             const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
-            setBodyParts(['all', ...bodyPartsData]);
+            if(bodyPartsData?.length>0){
+                setBodyParts(['all', ...bodyPartsData]);
+            }
+            else{
+                setBodyParts(['all']);
+            }
         }
         fetchExercisesData();
     }, []);

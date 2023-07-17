@@ -12,7 +12,7 @@ export default function Exercises({ exercises, setExercises, bodyPart }) {
     const exercisesPerPage = 9;
     const indexOfLastExercise = currentPage * exercisesPerPage;
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-    const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+    const currentExercises = exercises?.slice(indexOfFirstExercise, indexOfLastExercise);
 
     const paginae = (e, value) => {
         setCurrentPage(value);
